@@ -8,6 +8,9 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.12"
 fastapi = {extras = ["standard"], version = "^0.115.6"}
+asyncpg = "^0.30.0"
+pydantic-settings = "^2.6.1"
+sqlmodel = "^0.0.22"
 
 
 [build-system]
