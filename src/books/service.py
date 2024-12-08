@@ -25,6 +25,7 @@ class BookService:
             updated_at=datetime.now(),
             **book_data_dict
         )
+        new_book.published_date = datetime.strptime(str(book_data_dict["published_date"]), "%Y-%m-%d")
         session.add(new_book)
         await session.commit()
         await session.refresh(new_book)
