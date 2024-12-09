@@ -11,6 +11,7 @@ fastapi = {extras = ["standard"], version = "^0.115.6"}
 asyncpg = "^0.30.0"
 pydantic-settings = "^2.6.1"
 sqlmodel = "^0.0.22"
+alembic = "^1.14.0"
 
 
 [build-system]
